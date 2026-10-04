@@ -54,6 +54,18 @@ cd ai-marketing-claude
 pip install reportlab
 ```
 
+### Optional: Alternate Model Provider
+
+To run Claude Code against Meta's Anthropic-compatible endpoint (`muse-spark-1.3-contributor`) instead of the default, source the opt-in env file in the shell you launch `claude` from:
+
+```bash
+export MODEL_API_KEY="..."   # keep this out of git
+source scripts/use-muse-spark.env
+claude
+```
+
+It only affects that shell; open a new one to return to the default provider.
+
 ---
 
 ## Commands
