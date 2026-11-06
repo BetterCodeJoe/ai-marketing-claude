@@ -66,6 +66,14 @@ claude
 
 It only affects that shell; open a new one to return to the default provider.
 
+To compare the two models on any skill, run the same brief through both and score the side-by-side report (`MODEL-COMPARISON.md`):
+
+```bash
+export ANTHROPIC_API_KEY="..." MODEL_API_KEY="..."
+python3 scripts/compare_models.py --skill market-ads --runs 3 \
+  --task "Business: ... Product: ... Audience: ... Budget: ..."
+```
+
 ---
 
 ## Commands
